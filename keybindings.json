@@ -1,0 +1,115 @@
+// vscode-keybindings for navigation with I/J/K/L and additional functionality with surrounding characters 
+// Place your key bindings in this file to overwrite the defaults
+// ALT + N/M: send cursor left/right by 1 character
+// ALT + J/L: send cursor to start/end of the word
+// ALT + I/K/: up/down
+// ALT + SHIFT + I/J/K/L: same as above but with a selection
+// ALT + U/O: send cursor to start/end of line
+// ALT + H: got to declaration
+// CTRL + I/K: add/remove another cursor up/down
+[
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "cursorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+i",
+    "command": "cursorUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+m",
+    "command": "cursorRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+n",
+    "command": "cursorLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+k",
+    "command": "cursorDownSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+i",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+l",
+    "command": "cursorRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+j",
+    "command": "cursorLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "cursorWordEndRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "cursorWordStartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+l",
+    "command": "cursorWordRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+j",
+    "command": "cursorWordLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+o",
+    "command": "cursorEndSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+u",
+    "command": "cursorHomeSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+o",
+    "command": "cursorEnd",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+u",
+    "command": "cursorHome",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+h",
+    "command": "editor.action.goToDeclaration"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "cursorColumnSelectUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "cursorColumnSelectDown",
+    "when": "editorTextFocus"
+  }
+]
